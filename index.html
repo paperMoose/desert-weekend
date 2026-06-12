@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>palm springs — for you</title>
+<title>palm springs — it's booked</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -18,13 +18,13 @@
     mix-blend-mode:multiply}
   .eyebrow{font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;font-weight:400}
 
-  /* ── INTRO ── */
+  /* INTRO */
   .intro{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;
     text-align:center;padding:8vh 7vw;position:relative;
     background:radial-gradient(120% 80% at 50% -10%,#f7c98a66,transparent 60%),
       radial-gradient(90% 60% at 50% 120%,#e2a4a044,transparent 60%),var(--paper)}
   .intro .eyebrow{color:#a86b4a;margin-bottom:2.4rem;opacity:0;animation:rise 1.1s var(--ease) .2s forwards}
-  .intro h1{font-family:'Fraunces',serif;font-weight:340;line-height:.98;font-size:clamp(3rem,11vw,6.8rem);letter-spacing:-.02em}
+  .intro h1{font-family:'Fraunces',serif;font-weight:340;line-height:.98;font-size:clamp(3rem,12vw,7rem);letter-spacing:-.02em}
   .intro h1 .l{display:block;opacity:0;animation:rise 1.2s var(--ease) forwards}
   .intro h1 .l:nth-child(1){animation-delay:.35s}
   .intro h1 .l:nth-child(2){animation-delay:.5s}
@@ -37,14 +37,12 @@
   @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
   @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
 
-  /* ── PLACE postcard ── */
+  /* POSTCARD */
   .place{min-height:100svh;position:relative;overflow:hidden;display:flex;flex-direction:column;
-    justify-content:flex-end;padding:0 0 8vh;
-    --c-text:#fbeede;--c-acc:#ffd9a0;--c-rule:#ffffff33}
+    justify-content:flex-end;padding:0 0 8vh;--c-text:#fbeede;--c-acc:#ffd9a0;--c-rule:#ffffff33}
   .sky{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,#3a2350 0%,#6e3a55 32%,#b95742 60%,#e58a4e 80%,#f4b25f 100%)}
   .sun{position:absolute;width:230px;height:230px;top:24vh;left:50%;transform:translateX(-50%);border-radius:50%;
-    background:radial-gradient(circle,#ffe7b8,#ffb765 55%,#ff9d5c 100%);box-shadow:0 0 120px 50px #ff9d5c66;
-    animation:bob 9s ease-in-out infinite}
+    background:radial-gradient(circle,#ffe7b8,#ffb765 55%,#ff9d5c 100%);box-shadow:0 0 120px 50px #ff9d5c66;animation:bob 9s ease-in-out infinite}
   @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-14px)}}
   .silhouette{position:absolute;left:0;right:0;bottom:0;width:100%;display:block}
   .ghost-temp{position:absolute;z-index:2;top:8vh;right:5vw;font-family:'Fraunces',serif;font-weight:300;
@@ -60,86 +58,92 @@
   .moments .ic{flex:0 0 auto;width:26px;height:26px;margin-top:1px;color:var(--c-acc)}
   .teaser{font-family:'Fraunces',serif;font-style:italic;font-size:1.15rem;color:var(--c-acc);border-top:1px solid var(--c-rule);padding-top:1.5rem;max-width:44ch}
 
-  /* reveal */
   .reveal>*{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
   .reveal.in>*{opacity:1;transform:none}
-  .reveal.in h2{transition-delay:.13s}
-  .reveal.in .sub{transition-delay:.22s}
-  .reveal.in .moments{transition-delay:.3s}
-  .reveal.in .teaser{transition-delay:.42s}
+  .reveal.in h2{transition-delay:.13s}.reveal.in .sub{transition-delay:.22s}
+  .reveal.in .moments{transition-delay:.3s}.reveal.in .teaser{transition-delay:.42s}
 
-  /* ── DETAIL the days ── */
-  .detail{position:relative;padding:14vh 7vw;overflow:hidden;color:#fbeede;
-    --c-acc:#ffd9a0;--c-rule:#ffffff2e;background:linear-gradient(180deg,#2a1733,#3f1f38 58%,#5a2b3a)}
+  /* STAY — Casa Cody */
+  .hotel{position:relative;padding:14vh 6vw 8vh;background:radial-gradient(90% 50% at 50% 0%,#f7cf9e,transparent 55%),#f1e0cb}
+  .hotel .head{text-align:center;max-width:720px;margin:0 auto 4rem}
+  .hotel .eyebrow{color:#b06a45;margin-bottom:1.4rem}
+  .hotel h3{font-family:'Fraunces',serif;font-weight:330;font-size:clamp(2.6rem,9vw,4.6rem);line-height:.95;letter-spacing:-.02em}
+  .hotel h3 em{font-style:italic;color:#c2613f}
+  .hotel .lead{font-weight:300;font-size:clamp(1.02rem,3.6vw,1.18rem);line-height:1.6;color:#5a463a;max-width:60ch;margin:1.6rem auto 0}
+  .hotel .pills{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:1.8rem}
+  .pill{font-size:.74rem;letter-spacing:.04em;padding:.4rem .85rem;border-radius:999px;background:#f3dcbf;color:#8a5a3c;border:1px solid #e3cba9}
+  .pill.hot{background:#f3d6c0;color:#b8552f;border-color:#eec3a6}
+  /* gallery */
+  .gallery{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px}
+  .gallery figure{margin:0;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 14px 34px -20px #6b3a2a66}
+  .gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--ease)}
+  .gallery figure:hover img{transform:scale(1.06)}
+  .gallery .big{grid-column:span 2;grid-row:span 2}
+  .gallery .tall{grid-row:span 2}
+  .gallery figcaption{position:absolute;left:0;bottom:0;right:0;z-index:2;padding:.8rem 1rem .7rem;
+    font-family:'Fraunces',serif;font-style:italic;font-size:.92rem;color:#fff;
+    background:linear-gradient(transparent,#0000008c);opacity:0;transition:opacity .4s}
+  .gallery figure:hover figcaption{opacity:1}
+  .hotel.reveal.in .gallery{transition-delay:.3s}
+
+  /* DETAIL the days */
+  .detail{position:relative;padding:14vh 7vw;overflow:hidden;color:#fbeede;--c-acc:#ffd9a0;--c-rule:#ffffff2e;
+    background:linear-gradient(180deg,#2a1733,#3f1f38 58%,#5a2b3a)}
   .detail::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)'/%3E%3C/svg%3E")}
-  .detail .eyebrow{color:var(--c-acc);margin-bottom:3.6rem;display:flex;align-items:center;gap:1rem;position:relative;z-index:1}
+  .detail .eyebrow{color:var(--c-acc);margin-bottom:3.4rem;display:flex;align-items:center;gap:1rem;position:relative;z-index:1}
   .detail .eyebrow::before{content:"";height:1px;width:40px;background:var(--c-acc);opacity:.5}
-  .days{max-width:780px;margin:0 auto 5rem;position:relative;z-index:1}
+  .days{max-width:780px;margin:0 auto;position:relative;z-index:1}
   .day{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.2rem,5vw,3.4rem);align-items:baseline;padding:1.9rem 0;border-top:1px solid var(--c-rule)}
   .day:last-child{border-bottom:1px solid var(--c-rule)}
   .day .d{font-family:'Fraunces',serif;font-style:italic;font-weight:360;font-size:clamp(1.4rem,5vw,2rem);color:var(--c-acc);letter-spacing:.02em}
   .day .p{font-weight:300;font-size:clamp(1rem,3.6vw,1.12rem);line-height:1.55;opacity:.94;max-width:52ch}
   .day .p b{font-weight:500}
-  .table{max-width:780px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;border-top:1px solid var(--c-rule);padding-top:3rem;position:relative;z-index:1}
-  .table .lbl{font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;color:var(--c-acc);margin-bottom:1.2rem;display:block}
-  .table ul{list-style:none;display:flex;flex-direction:column;gap:.85rem}
+  .detail.reveal.in .days{transition-delay:.12s}
+
+  /* DO — things to do */
+  .do{padding:14vh 6vw;background:radial-gradient(80% 50% at 50% 0%,#f4cf9b,transparent 55%),#efdcc4}
+  .do .head{text-align:center;max-width:680px;margin:0 auto 4rem}
+  .do .eyebrow{color:#b06a45;margin-bottom:1.4rem}
+  .do h3{font-family:'Fraunces',serif;font-weight:330;font-size:clamp(2.4rem,8vw,4rem);line-height:.96;letter-spacing:-.02em}
+  .do h3 em{font-style:italic;color:#c2613f}
+  .grid{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .do-card{background:#fbf2e6;border:1px solid #e7d2b8;border-radius:18px;padding:1.7rem 1.6rem;box-shadow:0 14px 34px -24px #6b3a2a55;
+    transition:transform .5s var(--ease)}
+  .do-card:hover{transform:translateY(-6px)}
+  .do-card .ic{width:30px;height:30px;color:#c2613f;margin-bottom:1rem}
+  .do-card h4{font-family:'Fraunces',serif;font-weight:430;font-size:1.3rem;margin-bottom:.5rem}
+  .do-card p{font-weight:300;font-size:.97rem;line-height:1.5;color:#5a463a}
+  .do-card .near{display:block;margin-top:.8rem;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#b06a45}
+  .do.reveal.in .do-card{animation:pop .7s var(--ease) both}
+  .do.reveal.in .do-card:nth-child(2){animation-delay:.08s}
+  .do.reveal.in .do-card:nth-child(3){animation-delay:.16s}
+  .do.reveal.in .do-card:nth-child(4){animation-delay:.24s}
+  .do.reveal.in .do-card:nth-child(5){animation-delay:.32s}
+  .do.reveal.in .do-card:nth-child(6){animation-delay:.4s}
+  @keyframes pop{from{opacity:0;transform:translateY(28px) scale(.98)}to{opacity:1;transform:none}}
+
+  /* TABLE */
+  .table-sec{padding:13vh 7vw;background:linear-gradient(180deg,#5a2b3a,#3f1f38)}
+  .table{max-width:780px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;color:#fbeede}
+  .table .eyebrow{color:#ffd9a0;margin-bottom:1.2rem;display:block;font-size:.68rem;letter-spacing:.34em}
+  .table ul{list-style:none;display:flex;flex-direction:column;gap:.9rem}
   .table li{font-weight:300;line-height:1.35}
   .table li b{font-family:'Fraunces',serif;font-style:italic;font-weight:440;font-size:1.08rem}
   .table li span{display:block;font-size:.82rem;opacity:.62;margin-top:.12rem}
-  .weather-note{max-width:780px;margin:3.6rem auto 0;font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.05rem,3.6vw,1.25rem);color:var(--c-acc);text-align:center;opacity:.92;position:relative;z-index:1}
-  .detail.reveal.in .days{transition-delay:.12s}
-  .detail.reveal.in .table{transition-delay:.24s}
-  .detail.reveal.in .weather-note{transition-delay:.34s}
 
-  /* ── STAY (cute hotels) ── */
-  .stay{position:relative;padding:14vh 7vw 16vh;
-    background:radial-gradient(90% 60% at 50% 0%,#f7cf9e,transparent 55%),#f1e0cb}
-  .stay .head{text-align:center;max-width:680px;margin:0 auto 5rem}
-  .stay .eyebrow{color:#b06a45;margin-bottom:1.6rem}
-  .stay h3{font-family:'Fraunces',serif;font-weight:330;font-size:clamp(2.4rem,8vw,4.2rem);line-height:.96;letter-spacing:-.02em}
-  .stay h3 em{font-style:italic;color:#c2613f}
-  .stay .note{font-family:'Fraunces',serif;font-style:italic;color:#8a6a52;font-size:1.15rem;margin-top:1.4rem}
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;max-width:1080px;margin:0 auto}
-  .card{background:#fbf2e6;border-radius:20px;overflow:hidden;position:relative;
-    box-shadow:0 18px 40px -22px #6b3a2a55;border:1px solid #e7d2b8;
-    display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-  .card:hover{transform:translateY(-8px);box-shadow:0 30px 56px -24px #6b3a2a66}
-  .card .scene{height:172px;position:relative;overflow:hidden}
-  .card .scene svg{position:absolute;inset:0;width:100%;height:100%}
-  .card .scene img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
-    transition:transform .7s var(--ease)}
-  .card:hover .scene img{transform:scale(1.05)}
-  .card .scene::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-    background:linear-gradient(180deg,#00000055 0%,transparent 32%,transparent 70%,#0000002e 100%)}
-  .card .num{position:absolute;top:11px;left:15px;z-index:2;font-family:'Fraunces',serif;font-style:italic;
-    color:#fff;font-size:1.15rem;opacity:.95;text-shadow:0 1px 8px #0006}
-  .card .body{padding:1.5rem 1.5rem 1.7rem;display:flex;flex-direction:column;flex:1}
-  .card h4{font-family:'Fraunces',serif;font-weight:400;font-size:1.5rem;line-height:1;margin-bottom:.5rem}
-  .card .vibe{font-family:'Fraunces',serif;font-style:italic;color:#b06a45;font-size:1.02rem;margin-bottom:1.1rem}
-  .card .why{font-weight:300;font-size:.96rem;line-height:1.5;color:#4a3a30;margin-bottom:1.3rem;flex:1}
-  .pills{display:flex;flex-wrap:wrap;gap:.45rem}
-  .pill{font-size:.72rem;letter-spacing:.04em;padding:.34rem .7rem;border-radius:999px;background:#f0dec5;color:#8a5a3c;border:1px solid #e3cba9}
-  .pill.hot{background:#f5d9c4;color:#b8552f;border-color:#eec3a6}
-  .cards.reveal.in .card{animation:pop .7s var(--ease) both}
-  .cards.reveal.in .card:nth-child(1){animation-delay:.05s}
-  .cards.reveal.in .card:nth-child(2){animation-delay:.18s}
-  .cards.reveal.in .card:nth-child(3){animation-delay:.31s}
-  @keyframes pop{from{opacity:0;transform:translateY(34px) scale(.97)}to{opacity:1;transform:none}}
-
-  /* ── CLOSING ── */
-  .choose{min-height:78svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
-    padding:12vh 7vw;position:relative;
-    background:radial-gradient(80% 50% at 50% 100%,#e58a4e33,transparent 60%),var(--paper)}
+  /* CLOSING */
+  .choose{min-height:80svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+    padding:12vh 7vw;background:radial-gradient(80% 50% at 50% 100%,#e58a4e33,transparent 60%),var(--paper)}
   .choose .eyebrow{color:#a86b4a;margin-bottom:2rem}
-  .choose h3{font-family:'Fraunces',serif;font-weight:330;font-style:italic;font-size:clamp(2.4rem,8.5vw,4.4rem);line-height:1.02;letter-spacing:-.02em;max-width:14ch;margin-bottom:2.6rem}
+  .choose h3{font-family:'Fraunces',serif;font-weight:330;font-style:italic;font-size:clamp(2.4rem,8.5vw,4.4rem);line-height:1.02;letter-spacing:-.02em;max-width:16ch;margin-bottom:2.6rem}
   .choose h3 em{color:#c2613f;font-style:normal}
   .sign{font-family:'Fraunces',serif;font-style:italic;font-size:1.2rem;color:#85705f}
   .sign b{color:#c2613f;font-weight:500}
 
-  @media(max-width:880px){.cards{grid-template-columns:1fr;max-width:440px}}
-  @media(max-width:560px){.ghost-temp{top:6vh}.table{grid-template-columns:1fr;gap:2.4rem}.day{grid-template-columns:1fr;gap:.45rem}}
-  @media(prefers-reduced-motion:reduce){*{animation:none!important}.reveal>*{opacity:1;transform:none}.cards.reveal.in .card{animation:none}}
+  @media(max-width:880px){.grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}.gallery .big{grid-column:span 2}}
+  @media(max-width:560px){.ghost-temp{top:6vh}.table{grid-template-columns:1fr;gap:2.4rem}.day{grid-template-columns:1fr;gap:.45rem}.grid{grid-template-columns:1fr}.gallery .big{grid-row:span 1}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}.reveal>*{opacity:1;transform:none}.do.reveal.in .do-card{animation:none}}
 </style>
 </head>
 <body>
@@ -147,16 +151,12 @@
   <!-- INTRO -->
   <section class="intro">
     <span class="eyebrow">a note from ryan</span>
-    <h1>
-      <span class="l">I'm stealing</span>
-      <span class="l">you for a</span>
-      <span class="l">weekend in the <em>desert.</em></span>
-    </h1>
+    <h1><span class="l">It's booked.</span><span class="l">We're going to</span><span class="l">the <em>desert.</em></span></h1>
     <div class="dates">palm springs · june 26–29</div>
-    <div class="cue">friday morning to monday night. scroll ↓</div>
+    <div class="cue">scroll — here's the whole thing ↓</div>
   </section>
 
-  <!-- PALM SPRINGS postcard -->
+  <!-- POSTCARD -->
   <section class="place reveal">
     <div class="sky"><div class="sun"></div></div>
     <div class="ghost-temp">104°</div>
@@ -176,10 +176,26 @@
       <ul class="moments">
         <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>Poolside all afternoon — you, a lounger, the sun, and not one single cloud.</li>
         <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 18h18M5 18l7-12 7 12M9 18l3-5 3 5"/></svg>The tram, two miles straight up the mountain — 30° cooler and it smells like pine.</li>
-        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 3h14l-7 9zM12 12v8M8 21h8"/></svg>Dinner on a patio that starts at sunset, drinks sweating on the table.</li>
-        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 18V5l10-2v13M9 9l10-2"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>Latin night downtown till 1am — big sound, and the floor never empties.</li>
+        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 3h14l-7 9zM12 12v8M8 21h8"/></svg>Dinner a five-minute walk away, then dancing till the lights come up.</li>
       </ul>
-      <p class="teaser">three nights, four days — and you already found us the perfect place to stay ↓</p>
+      <p class="teaser">and the place I booked us is the prettiest little thing in town ↓</p>
+    </div>
+  </section>
+
+  <!-- CASA CODY -->
+  <section class="hotel reveal">
+    <div class="head">
+      <div class="eyebrow">where we're staying</div>
+      <h3>Casa <em>Cody</em></h3>
+      <p class="lead">The oldest hotel in Palm Springs — a 1920s adobe hideaway of pink bougainvillea, two saltwater pools, a hot tub, and gardens tucked right at the foot of the mountains. It's the cutest, most romantic spot in town, and it's a five-minute walk from dinner and the dance floor.</p>
+      <div class="pills"><span class="pill hot">two pools</span><span class="pill hot">hot tub</span><span class="pill">historic adobe</span><span class="pill">🌺 bougainvillea gardens</span><span class="pill">🚶 walk to everything</span></div>
+    </div>
+    <div class="gallery">
+      <figure class="big"><img src="images/cc_main.jpg" alt="Casa Cody pool and mountains" loading="lazy"><figcaption>our pool, the mountains right behind it</figcaption></figure>
+      <figure class="tall"><img src="images/cc_pool.jpg" alt="Casa Cody bougainvillea pool" loading="lazy"><figcaption>the bougainvillea</figcaption></figure>
+      <figure><img src="images/casacody_6.jpg" alt="Casa Cody garden fountain" loading="lazy"><figcaption>the gardens</figcaption></figure>
+      <figure><img src="images/casacody_1.jpg" alt="Casa Cody adobe pool" loading="lazy"><figcaption>the second pool</figcaption></figure>
+      <figure class="tall"><img src="images/cc_spa.jpg" alt="Casa Cody spa room" loading="lazy"><figcaption>the spa, if we feel like it</figcaption></figure>
     </div>
   </section>
 
@@ -187,88 +203,72 @@
   <section class="detail reveal">
     <div class="eyebrow">the days</div>
     <div class="days">
-      <div class="day"><div class="d">Friday</div><div class="p">An afternoon flight — sleep on the plane, I know the deal — and we land just in time to drop our bags and catch golden hour by the pool. Candlelit dinner at <b>Le Vallauris</b>, then we go find the floor at <b>Reforma</b> downtown.</div></div>
-      <div class="day"><div class="d">Saturday</div><div class="p">A round of golf before it gets hot, then the pool is yours all afternoon — lounger, sun, a cold drink in hand. Golden hour we ride the <b>tram</b> two miles up the mountain where it's thirty degrees cooler, then back down to dance.</div></div>
-      <div class="day"><div class="d">Sunday</div><div class="p">The palm oasis at <b>Indian Canyons</b> while the morning's still soft, then a slow brunch and nothing but sun. Patio dinner at <b>Tac/Quila</b>, and a vintage movie under the stars back at the hotel.</div></div>
-      <div class="day"><div class="d">Monday</div><div class="p">Nothing on purpose. Sleep in, one last float of a morning by the pool, a long lazy brunch — we don't fly home until evening, so the weekend gets a whole extra day. Home by bedtime.</div></div>
+      <div class="day"><div class="d">Friday</div><div class="p">An afternoon flight — sleep on the plane, I know the deal — and we land, check into Casa Cody, and the first dip in the pool is yours. Then we <b>walk</b> to dinner at <b>Le Vallauris</b> and go find the floor at <b>Reforma</b>.</div></div>
+      <div class="day"><div class="d">Saturday</div><div class="p">A little golf or a canyon walk before it gets hot — the trails start right behind the hotel. Then the pool is yours all afternoon. Golden hour we ride the <b>tram</b> two miles up the mountain where it's thirty degrees cooler, then back down to eat and dance.</div></div>
+      <div class="day"><div class="d">Sunday</div><div class="p">The palm oasis at <b>Indian Canyons</b> while the morning's still soft, then nothing but sun and the gardens. A spicy red at <b>HALL</b>, a long dinner, a vintage-Palm-Springs night.</div></div>
+      <div class="day"><div class="d">Monday</div><div class="p">Nothing on purpose. Sleep in, one last float in the pool, a lazy brunch — we don't fly home till evening, so the weekend gets a whole extra day.</div></div>
     </div>
+  </section>
+
+  <!-- THINGS TO DO -->
+  <section class="do reveal">
+    <div class="head">
+      <div class="eyebrow">what we'll get up to</div>
+      <h3>your kind of <em>weekend</em></h3>
+    </div>
+    <div class="grid">
+      <div class="do-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+        <h4>Sun by the pool</h4><p>Two saltwater pools and a hot tub in the bougainvillea, all to ourselves. Lay out, cold drink, repeat.</p><span class="near">at the hotel</span>
+      </div>
+      <div class="do-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 18V5l10-2v13M9 9l10-2"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>
+        <h4>Dinner &amp; dancing</h4><p>Restaurants, bars, and the dance floor at Reforma — all a short walk down the street. Walk there, walk home.</p><span class="near">5-min walk</span>
+      </div>
+      <div class="do-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 18h18M5 18l7-12 7 12M9 18l3-5 3 5"/></svg>
+        <h4>The Aerial Tram</h4><p>A rotating car two miles up Mt. San Jacinto — 30° cooler, pine forest, and the whole valley under us at sunset.</p><span class="near">10-min drive</span>
+      </div>
+      <div class="do-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 20h18M3 20l6-11 4 6 3-5 5 10"/></svg>
+        <h4>Canyon hikes</h4><p>Indian Canyons &amp; Tahquitz — palm oases and a waterfall, trailheads right at the base of the mountains behind us. Early, before the heat.</p><span class="near">10-min drive</span>
+      </div>
+      <div class="do-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 3h8l-1 8a3 3 0 0 1-6 0zM12 14v6M8 21h8"/></svg>
+        <h4>Spicy reds</h4><p>HALL's Zinfandel flight and Jalama's Syrah — the big bold reds you like, in air-conditioned tasting rooms when the sun's at its worst.</p><span class="near">downtown</span>
+      </div>
+      <div class="do-card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 18h16M6 18V8a6 6 0 0 1 12 0v10M9 8a3 3 0 0 1 6 0"/></svg>
+        <h4>A morning round</h4><p>Summer twilight golf, cheap and empty, with the mountains as a backdrop. We tee off early before it bakes.</p><span class="near">nearby</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLE -->
+  <section class="table-sec reveal">
     <div class="table">
-      <div><span class="lbl">to eat</span><ul>
-        <li><b>Le Vallauris</b><span>French, candlelit, in a 1927 villa</span></li>
+      <div><span class="eyebrow">to eat</span><ul>
+        <li><b>Le Vallauris</b><span>French, candlelit, 5-min walk</span></li>
         <li><b>Tac / Quila</b><span>margaritas on the patio · Michelin</span></li>
         <li><b>Smoke Tree BBQ</b><span>low and slow, your kind of plate</span></li>
       </ul></div>
-      <div><span class="lbl">to drink</span><ul>
-        <li><b>HALL Palm Springs</b><span>a Zinfandel flight — the big spicy reds you love</span></li>
-        <li><b>Jalama</b><span>Syrah &amp; Rhône blends, walk to dinner after</span></li>
+      <div><span class="eyebrow">to drink</span><ul>
+        <li><b>HALL Palm Springs</b><span>a Zinfandel flight — the big spicy reds</span></li>
+        <li><b>Reforma</b><span>the dance floor, Latin nights</span></li>
+        <li><b>Casa Cody gardens</b><span>a bottle of red, the firepit, just us</span></li>
       </ul></div>
-    </div>
-    <p class="weather-note">104° and not a single cloud — sun whenever you want it.</p>
-  </section>
-
-  <!-- WHERE WE'D STAY -->
-  <section class="stay">
-    <div class="head">
-      <div class="eyebrow">where we're waking up</div>
-      <h3>you already found <em>the one</em></h3>
-      <p class="note">you said Korakia looked cute. I checked everything in the desert — you were right the first time. (runners-up below, for the record.)</p>
-    </div>
-    <div class="cards reveal">
-
-      <!-- Korakia -->
-      <article class="card">
-        <div class="scene">
-          <img src="images/korakia_1.jpg" alt="Korakia Pensione" loading="lazy">
-          <span class="num">i.</span>
-        </div>
-        <div class="body">
-          <h4>Korakia Pensione</h4>
-          <div class="vibe">a candlelit Moroccan dream</div>
-          <p class="why">Two restored 1920s villas, a hundred lanterns lit every night, vintage films under the stars. No TVs — just fountains, gardens, and two warm saltwater pools with the mountains behind them.</p>
-          <div class="pills"><span class="pill hot">✓ your pick — ours</span><span class="pill hot">two pools</span><span class="pill">🕯 candlelit</span><span class="pill">movies under stars</span></div>
-        </div>
-      </article>
-
-      <!-- La Maison -->
-      <article class="card">
-        <div class="scene">
-          <img src="images/lamaison_p1.jpg" alt="La Maison Hotel" loading="lazy">
-          <span class="num">ii.</span>
-        </div>
-        <div class="body">
-          <h4>La Maison</h4>
-          <div class="vibe">a little French country villa</div>
-          <p class="why">Adults-only and owner-run, the kind of place that knows your name by breakfast. A big heated pool and a hot jacuzzi in a walled garden, free scones in the morning, wine in the evening.</p>
-          <div class="pills"><span class="pill hot">pool + jacuzzi</span><span class="pill">adults only</span><span class="pill">scones &amp; wine</span></div>
-        </div>
-      </article>
-
-      <!-- Holiday House -->
-      <article class="card">
-        <div class="scene">
-          <img src="images/holidayhouse_p1.jpg" alt="Holiday House" loading="lazy">
-          <span class="num">iii.</span>
-        </div>
-        <div class="body">
-          <h4>Holiday House</h4>
-          <div class="vibe">cobalt-blue &amp; downtown-cute</div>
-          <p class="why">A 1951 design gem in bold blue-and-white, real art on the walls, rosé brought to your lounger by a saltwater pool and whirlpool. Right downtown — we could walk to dancing.</p>
-          <div class="pills"><span class="pill hot">pool + whirlpool</span><span class="pill">adults only</span><span class="pill">🚶 walk to dancing</span></div>
-        </div>
-      </article>
-
     </div>
   </section>
 
   <!-- CLOSING -->
   <section class="choose">
     <span class="eyebrow">so</span>
-    <h3>korakia. june 26–29. <em>say yes.</em></h3>
-    <p class="sign">fly out friday morning, home monday night. all on me. — <b>R</b></p>
+    <h3>Casa Cody. june 26–29. <em>it's all booked.</em></h3>
+    <p class="sign">fly down friday, home monday night. now we just count the days. — <b>R</b></p>
   </section>
 
 <script>
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.2});
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.15});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
